@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>You rolled the dice. Good luck!</h1>
+
+      <div class="dice-container">
+        <div class="dice">
+          <p>Player 1</p>
+          <img class="img1 animated" src="./images/dice6.png">
+        </div>
+
+        <div class="dice">
+          <p>Player 2</p>
+          <img class="img2 animated" src="./images/dice6.png">
+        </div>
+      </div>
+
+      <!-- Add a refresh button -->
+      <button onclick="refreshPage()" class="refresh-button">Roll The Dice</button>
+    </div>
+    
+    <script src="./index.js" charset="utf-8"></script>
+    
+    <footer>
+  Made with ❤️ by Burak
+    </footer>
+
+    <script>
+      function refreshPage() {
+        location.reload(); // Reload the current page
+      }
+    </script>
+    
+    
+  </body>
+</html>
